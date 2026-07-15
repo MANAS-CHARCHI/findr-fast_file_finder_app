@@ -1,0 +1,21 @@
+# Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+cargo --version
+rustc --version
+
+# Tauri CLI
+npm install -g @tauri-apps/cli
+
+
+
+# OS-specific system deps:
+# macOS: xcode-select --install
+# Windows: install "Desktop development with C++" via Visual Studio Build Tools + WebView2 (usually preinstalled on Win11)
+# Linux (Ubuntu/Debian): 
+sudo apt update && sudo apt install -y libwebkit2gtk-4.1-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev pkg-config build-essential
+
+
+npm create tauri-app@latest Findr
+
+npm run tauri dev
